@@ -1,0 +1,18 @@
+{
+  "name": "vundb/ansible-role-nginx-lb",
+  "description": "Ansible role to configure nginx as loadbalancer.",
+  "license": "MIT",
+  "type": "chef-role",
+  "authors": [
+    {
+      "name": "Viktor Breitenbuecher",
+      "email": "vic.b@outlook.com"
+    }
+  ],
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "extra": {
+    "installer-name": "vundb-nginx-lb"
+  }
+}
