@@ -24,6 +24,14 @@ Example Playbook
 - hosts: all
   roles:
     - role: vundb-nginx-lb
+      nginx_upstreams:
+        - label: "example-com"
+          server_name: "example.com"
+          port: 80
+          ip_hash: true
+          keepalive: 32
+          servers:
+            - "127.0.0.1:81"
 ```
 
 License

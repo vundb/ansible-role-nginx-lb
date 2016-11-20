@@ -1,0 +1,28 @@
+#
+# System user for deamon process.
+#
+nginx_user: "nginx"
+
+#
+# System group for deamon process.
+#
+nginx_group: "nginx"
+
+#
+# Array with services to be restarted on changes.
+#
+nginx_services: ["nginx"]
+
+#
+# Array with upstream configuration.
+#
+#  nginx_upstreams:
+#    - label: "example-com"
+#      server_name: "example.com"
+#      port: 80
+#      ip_hash: true
+#      keepalive: 32
+#      servers:
+#        - "127.0.0.1:81"
+#
+nginx_upstreams: []

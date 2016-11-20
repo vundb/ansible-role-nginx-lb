@@ -1,0 +1,18 @@
+upstream {{ item.label }} {
+  {% if item.ip_hash %}ip_hash;{% endif %}
+
+  keepalive {{ item.keepalive }};
+
+{% for server in item.servers %}
+  server {{ server }};
+{% endfor %}
+}
+
+server {
+  listen {{ item.port }};
+  server_name {{ item.server_name }};
+
+  location / {
+    proxy_pass http://{{ item.label }};
+  }
+}
