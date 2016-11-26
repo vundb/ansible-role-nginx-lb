@@ -1,4 +1,4 @@
-Ansible Role Nginx Upstreams
+Ansible Role Nginx Upstream
 ======================================
 
 Ansible role to configure nginx upstreams used for loadbalancing.

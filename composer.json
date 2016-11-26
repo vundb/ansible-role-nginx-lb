@@ -1,5 +1,5 @@
 {
-  "name": "vundb/ansible-role-nginx-upstreams",
+  "name": "vundb/ansible-role-nginx-upstream",
   "description": "Ansible role to configure nginx upstreams used for loadbalancing",
   "license": "MIT",
   "type": "chef-role",
@@ -13,6 +13,6 @@
     "composer/installers": "~1.0"
   },
   "extra": {
-    "installer-name": "vundb-nginx-upstreams"
+    "installer-name": "vundb-nginx-upstream"
   }
 }
